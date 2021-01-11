@@ -10,7 +10,7 @@ mkShell rec {
     name = "zshrc";
     text = ''
     ZSH_THEME="ys"
-    source $ZSH/oh-my-zsh.sh
+    source ${oh-my-zsh}/share/oh-my-zsh/oh-my-zsh.sh
 
     HISTFILE=~/.zsh_history
     HISTSIZE=40000
