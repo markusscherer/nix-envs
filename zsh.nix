@@ -4,6 +4,7 @@ mkShell rec {
     zsh
     oh-my-zsh
     autojump
+    fzf
   ];
 
   zdotdir = writeTextFile {
