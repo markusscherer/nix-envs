@@ -28,8 +28,7 @@ mkShell rec {
       source "$(fzf-share)/key-bindings.zsh"
     fi
 
-    # I bet there's a way to make this more elegant...
-    source $(dirname $(dirname $(readlink -f $(which autojump))))/share/autojump/autojump.zsh
+    source ${autojump}/share/autojump/autojump.zsh
     '';
     destination = "/.zshrc";
   };
